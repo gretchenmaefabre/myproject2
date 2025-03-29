@@ -63,10 +63,10 @@ color: rgb(255, 255, 255);
 }
 
 i{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 i:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     transition: 0.3s ease-in-out;
     
     
@@ -80,13 +80,14 @@ img{
 
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin: 150px auto;
     width: 80%;
     height: 650px;
     border-color: #ff0077;
     box-shadow: 0 0 10px #ff0077;
-
+border: 1px  solid  white   ;
     background: transparent;
     border-radius: 10px;
     overflow: hidden;
@@ -94,9 +95,9 @@ img{
 }
 
 .form-section {
-    width: 50%;
+    width: 100%;
     padding: 40px;
-
+border: 1px solid white;
 }
 
 .form-section h1 {
@@ -178,12 +179,12 @@ button:hover {
     background-color: #0056b3;
 }
 
-.image-section {
+.img-section {
     width: 50%;
     padding: 20px;
 }
 
-.image-section img {
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -218,6 +219,9 @@ h1, a, h2, p, button, input, textarea,label, img{
     .newbox{
         display: none;
     }
-
+.container{
+grid-template-columns: repeat(1, 1fr);
+min-height: 70rem;
+}
 
 }
