@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+  
+
+}
+
+
+.logo h1 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+
+.header2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.boxer{
+text-align: left;
+display: none;
+color: rgb(0, 0, 0);   
+}
+
+
+.newbox{
+    display: flex;
+    gap: 50px;
+
+}
+.newbox a{
+    color:  rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+ 
+    font-weight: bold;
+}
+
+
+.newbox a:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+i{
+    color: rgb(0, 0, 0);
+}
+i:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+    
+    
+}
+
+
+
+
+.services-container {
+    display: grid;
+    justify-content: center;
+
+grid-template-columns: repeat(4,1fr);
+padding: 90px;
+gap: 10px;
+    margin-top: 50px;
+
+}
+
+
+.service-box {
+
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    height: 200px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation: float 3s infinite ease-in-out;
+}
+.newcon{
+    margin-top: 0;
+    padding-top: 0;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+h2 {
+    color: #ff6b6b;
+    padding-top: 3rem;
+    
+}
+h3{
+ 
+    color: black;
+    text-align: center;
+   padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes -secss{
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1, a, h2, p, .boxer, h3{
+    animation: -secss 2s ease-out forwards;
+}
+@keyframes burs {
+    from {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+  
+.services-container{
+    grid-template-columns: repeat(2,1fr);
+
+}
+   
+  
+
+    .boxer {
+        font-size: 24px;
+     display: flex;
+
+    }
+    .newbox{
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .new1{
+        height: 400px;
+      
+    }
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+       
+}
+
